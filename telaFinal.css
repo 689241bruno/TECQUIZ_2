@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #0d4b9c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url('/img/fundo-inicial.png');
+}
+
+@font-face {
+    font-family: "logo";
+    src: url('/fonte/Super\ Senior\ Personal\ Use.ttf') format('truetype');
+}
+
+h1{
+    color: white;
+    font-family: 'logo';
+    letter-spacing: 5px;
+    font-size: 3em;
+    animation: vencedor 2s infinite;
+}
+
+@keyframes vencedor{
+    0%{
+        font-size: 2.8em;
+    }50%{
+        font-size: 3.2em;
+    }100%{
+        font-size: 2.8em;
+    }
+}
+
+h2{
+    color: white;
+    font-family: 'logo';
+    letter-spacing: 5px;
+    font-size: 2em;
+    text-align: center;
+}
+
+

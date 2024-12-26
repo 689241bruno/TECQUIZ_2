@@ -1,0 +1,177 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+    background-color: #0d4b9c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url('img/fundo-inicial.png');
+}
+
+.parede{
+    height: 100vh;
+    width: 100vw;
+    background-color: #002e6b;
+    position: absolute;
+    top: -100%;
+    animation:aparecer 3s ease;
+}
+@keyframes aparecer {
+    0%{
+        top: -100%;
+    }100%{
+        top: 10%;
+    }
+}
+
+
+.sumirBotao{
+    animation: sumirBotao 1.4s ease;
+}
+@keyframes sumirBotao{
+    0%{
+        opacity: 1;
+    }100%{
+        opacity: 0;
+        display: none;
+    }
+}
+
+.sumir{
+    animation: sumir 1.3s ;
+}
+@keyframes sumir{
+    0%{
+        opacity: 1;
+    }100%{
+        opacity: 0;
+    }
+}
+
+@font-face {
+    font-family: "logo";
+    src: url('fonte/Super\ Senior\ Personal\ Use.ttf') format('truetype');
+}
+
+.container {
+    max-width: 600px;
+    height: 420px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #002e6b;
+    padding: 20px;
+}
+
+#titulo{
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+h1{
+    font-size: 8em;
+    margin-bottom: -20px;
+    letter-spacing: 5px;
+    font-family: 'logo', sans-serif;
+    color: white;
+}
+h2{
+    font-family: 'logo', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+}
+
+button{
+    height: 70px;
+    width: 250px;
+    background-color: rgb(228, 213, 4);
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    transition: 0.3s;
+    animation: loop 2s infinite;
+}
+
+@keyframes loop {
+    0%{
+        opacity: 90%;
+    }50%{
+        opacity: 100%;
+        transform: scale(1.05);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.651);
+    }100%{
+        opacity: 90%;
+    }
+}
+
+
+button > p{
+    font-family: 'logo';
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.613);
+    transform: scale(1.08);
+    opacity: 100%;
+    animation: none;
+}
+
+#tela{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nuvem{
+    position: absolute;
+    height: 140px;
+
+}
+#nuvem1{
+    top: 5%;
+    animation: nuvem1 linear 75s infinite;
+}
+@keyframes nuvem1{
+    0%{
+        right: -10%;
+    }50%{
+        right: 100%;
+    }100%{
+        right: -10%;
+    }
+}
+#nuvem2{
+    top: 55%;
+    animation: nuvem2 linear 70s infinite;
+}
+@keyframes nuvem2{
+    0%{
+        left: -20%;
+    }50%{
+        left: 100%;
+    } 100%{
+        left: -20%;
+    }
+}
+#nuvem3{
+    top: 80%;
+    animation: nuvem3 linear 100s infinite;
+}
+@keyframes nuvem3{
+    0%{
+        right: -50%;
+    }50%{
+        right: 100%;
+    }100%{
+        right: -50%;
+    }
+}
