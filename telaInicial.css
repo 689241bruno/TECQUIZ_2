@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: hidden;
-    background-image: url('img/fundo-inicial.png');
+    background-image: url('fundo-inicial.png');
 }
 
 .parede{

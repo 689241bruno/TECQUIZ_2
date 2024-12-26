@@ -8,7 +8,7 @@ botao.addEventListener('click', function() {
         tela.style.display = 'none';
     }, 700);
     setTimeout(function() {
-        window.location.href ="http://localhost/tecquiz_paginas_questoes/pergunta1.php";
+        window.location.href ="./pergunta1.html";
     }, 2000);
     const parede = document.getElementById('transicao');
     parede.classList.add('parede');
