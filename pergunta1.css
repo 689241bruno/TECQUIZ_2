@@ -16,7 +16,7 @@ body{
 
 main{
     background-color: white;
-    height: 75vh;
+    height: 70vh;
     width: 60vw;
     border-radius: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.696);
@@ -85,8 +85,7 @@ main section ul li div button:hover{
     cursor: pointer;
     opacity: 90%;
     transform: scale(1.05);
-
-    
+    animation: pulsar linear 1.3s infinite;
 }
 
 @keyframes pulsar{
@@ -105,10 +104,6 @@ main section ul li div > button{
     background-color: white;
 }
 
-main section ul li div > button:focus{
-    animation: pulsar linear 1.3s infinite;
-}
-
 #btnConfirmar{
     width: 220px;
     height: 40px;
@@ -125,6 +120,44 @@ main section ul li div > button:focus{
     cursor: pointer;
     transform: scale(1.03);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.51);
+}
+
+.box-resp{
+    position: absolute;
+    margin: auto;
+    height: 250px;
+    width: 500px;
+    top: 0;
+    animation: aparecer ease-in .5s;
+    border-radius: 0px 0px 20px 20px;
+}
+
+@keyframes aparecer{
+    0%{
+        top: -200px;
+    }100%{
+        top: 0px;
+        animation-duration: 0.4;
+    }
+
+}
+
+.box-resp-sumir{
+    position: absolute;
+    margin: auto;
+    height: 200px;
+    width: 500px;
+    top: -200px;
+    border-radius: 0px 0px 20px 20px;
+    animation: sumir linear .3s;
+}
+
+@keyframes sumir{
+    0%{
+        top: 0;
+    }100%{
+        top: -200px;
+    }
 }
 
 

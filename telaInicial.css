@@ -83,6 +83,31 @@ h1{
     font-family: 'logo', sans-serif;
     color: white;
 }
+
+@media (max-width: 540px) {
+    h1 {
+      font-size: 5em; 
+    }
+    img.nuvem{
+        height: 90px;
+    
+    } button#botao{
+        transform: scale(0.8);
+        animation: loopm linear 3s infinite;
+    }
+    @keyframes loopm {
+        0%{
+            opacity: 90%;
+        }50%{
+            opacity: 100%;
+            transform: scale(0.9);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.651);
+        }100%{
+            opacity: 90%;
+        }
+    }
+  }
+
 h2{
     font-family: 'logo', sans-serif;
     color: white;
@@ -138,7 +163,7 @@ button:hover{
 }
 #nuvem1{
     top: 5%;
-    animation: nuvem1 linear 75s infinite;
+    animation: nuvem1 linear 70s infinite;
 }
 @keyframes nuvem1{
     0%{
@@ -151,7 +176,9 @@ button:hover{
 }
 #nuvem2{
     top: 55%;
-    animation: nuvem2 linear 70s infinite;
+    animation-delay: 2s;
+    animation: nuvem2 linear 75s infinite;
+    
 }
 @keyframes nuvem2{
     0%{
@@ -164,7 +191,8 @@ button:hover{
 }
 #nuvem3{
     top: 80%;
-    animation: nuvem3 linear 100s infinite;
+    animation: nuvem3 linear 90s infinite;
+    
 }
 @keyframes nuvem3{
     0%{
